@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anhanguera-GO</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../estilo/style.css">
+    <link rel="stylesheet" href="../estilo/posts.css">
+    <link rel="stylesheet" href="../estilo/galeria.css">
+    <link rel="stylesheet" href="../estilo/media-query.css">
+    <link rel="shortcut icon" href="../imagens/icone.png" type="image/x-icon">   
+</head>
+
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Jardim de Leitura CEAAG</h1>
+    </header>
+
+    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+    
+    <div id="menu-container"></div>
+    
+    <main>
+        <h1>Retrato</h1>
+
+        <div id="autor">Cecília Meireles</div>
+        
+        <p>Eu não tinha este rosto de hoje,</p>
+        <p>assim calmo, assim triste, assim magro,</p>
+        <p>nem estes olhos tão vazios,</p>
+        <p>nem o lábio amargo.</p>
+        <p>Eu não tinha estas mãos sem força,</p>
+        <p>tão paradas e frias e mortas;</p>
+        <p>eu não tinha este coração</p>
+        <p>que nem se mostra.</p>
+        <p>Eu não dei por esta mudança,</p>
+        <p>tão simples, tão certa, tão fácil:</p>
+        <p>- Em que espelho ficou perdida</p>
+        <p>a minha face?</p>     
+    </main>
+    
+    <button onclick="topFunction()" id="topBtn" title="Voltar ao topo">↑</button>
+
+    <script src="../scripts/scripts.js"></script>
+    <script src="../scripts/script-publicacoes.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+
+    <script src="../scripts/scripts-comentarios.js"></script>
+</body>
+</html>

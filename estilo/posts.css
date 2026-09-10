@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+:root {
+    --cor0: white;
+    --cor1: #c7c5c5;
+    --cor2: #8e8686;
+    --cor3: #6b6464;
+    --cor4: #4c4646;
+    --cor5: #302e2e;
+    --cor6: #242121;
+    --cor7: black;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: Merriweather, cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    display: none;
+}
+
+main > h1 {
+    font-family: var(--fonte-destaque);
+    font-size: 2.1em;
+    margin: 0px 0px 25px 0px;
+}
+
+#autor {
+    text-align: right;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+main > h2 {
+    font-family: var(--fonte-destaque);
+    font-size: 1.8em;
+    text-align: left;
+    margin: 10px 0px
+}
+
+main > h3 {
+    font-family: var(--fonte-destaque);
+    font-size: 1.7em;
+}
+
+#referencia {
+    margin: 0px 0px 20px 0px;
+}
+
+#referencia > ul > li {
+    list-style-type: none;
+    margin: 0px 0px 10px 0px;
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    text-align: justify;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+#referencia > ul > li > a {
+    color: var(--cor7);
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    text-align: justify;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+#contribuicoes > ul {
+    list-style-type: none;
+}
+
+#contribuicoes > ul > li {
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    text-align: justify;
+    max-width: 100%;
+    padding: 0px 0px 5px 0px;
+}
+
+figure {
+    display: block;
+    text-align: center;
+    margin: 30px 0px 0px 0px;
+}
+
+figure > img {
+    max-width: 50%;
+    height: auto;
+}
+
+figure > figcaption {
+    text-align: left;
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    margin: 0px 0px 5px 0px;
+}
+
+.fonte {
+    font-family: var(--fonte-padrao);
+    font-size: 0.8em;
+    margin: 0px 0px 20px 0px;
+}
+
+footer {
+    background-color: #070b26;
+    color: var(--cor0);
+    font-family: var(--fonte-padrao);
+    font-size: 0.8em;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#topBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    z-index: 99;
+    font-size: 25px;
+    background-color: #161f57;
+    color: var(--cor0);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#topBtn:hover {
+    background-color: #384388;
+    color: var(--cor0);
+}
+
+#comentarioForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formResposta {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#comentarioForm input,
+#comentarioForm textarea,
+#comentarioForm button {
+    width: 400px;
+    box-sizing: border-box;
+    font-family: var(--fonte-padrao);
+    font-size: 18px;
+}
+
+.formResposta input, .formResposta textarea {
+    width: 400px;
+    box-sizing: border-box;
+    font-family: var(--fonte-padrao);
+    font-size: 18px;
+}
+
+#comentarioForm input, .formResposta input {
+    height: 37.8px;
+}
+
+#comentarioForm textarea, .formResposta textarea {
+    height: 108px;
+}
+
+#comentarioForm button {
+    height: 21.6px;
+    background-color: var(--cor9);
+    color: var(--cor7);
+    border-width: thin;
+    border-radius: 5px;
+}
+
+#comentarioForm button:hover,
+.btnResponder:hover,
+.btnEnviarResposta:hover,
+.btnCancelarResposta:hover {
+    background-color: var(--cor8);
+    color: var(--cor7);
+}
+
+#listaComentarios {
+    width: 400px;
+    margin: 30px 0px 0px 0px;
+    list-style-type: none;
+    font-family: var(--fonte-padrao);
+}
+
+.listaRespostas {
+    margin: 8px 0px 0px 24px;
+    list-style-type: none;
+    font-family: var(--fonte-padrao);
+}
+
+#listaComentarios > li, .listaRespostas > li {
+    padding-bottom: 15px;
+}
+
+#comentarios h2 {
+    font-family: var(--fonte-destaque);
+    font-size: 1.8em;
+    text-align: left;
+    margin: 30px 0px 10px 0px;
+}
+
+.btnResponder,
+.btnEnviarResposta,
+.btnCancelarResposta {
+    height: 21.6px;
+    background-color: var(--cor9);
+    color: var(--cor7);
+    font-family: var(--fonte-padrao);
+    font-size: 16px;
+    border-width: thin;
+    border-radius: 5px;
+}
+
+.btnResponder,
+.btnCancelarResposta {
+    width: 150px;
+    margin: 0px 0px 0px 10px;
+}
+
+#voltar {
+    font-family: var(--fonte-destaque);
+    text-decoration: none;
+    padding: 6px;
+    border-width: thin;
+    border-radius: 5px;
+    color: var(--cor7);
+    background-color: var(--cor9);
+}
+
+#voltar:hover {
+    color: var(--cor7);
+    background-color: var(--cor8);
+}
+
+sup {
+    font-size: 12px;
+    vertical-align: super;
+}
+
+.sobrescrito {
+    color: var(--cor7);
+    text-decoration: none;
+}
+
+.quebra-paragrafo{
+    text-indent: 0;
+}

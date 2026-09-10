@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+nav {
+    display: none;
+}
+
+main > h1 {
+    font-family: var(--fonte-destaque);
+    margin: 0px 0px 20px 0px;
+}
+
+main > ul > li {
+    list-style-type: none;
+    margin: 0px 0px 10px 0px;
+}
+
+main > ul > li > a {
+    color: var(--cor7);
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+}
